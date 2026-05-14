@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="sk">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Avs Playoff Bracket 2026 | Ultimate View</title>
+  <script src="https://unpkg.com/react@18/umd/react.production.min.js"></script>
+  <script src="https://unpkg.com/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&family=Inter:wght@400;900&display=swap');
+
+    body {
+      background: #020617;
+      color: white;
+      font-family: 'Inter', sans-serif;
+      background-image:
+        radial-gradient(at 0% 0%, rgba(111, 38, 61, 0.15) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(35, 97, 146, 0.15) 0px, transparent 50%);
+    }
+
+    .font-sync {
+      font-family: 'Syncopate', sans-serif;
+    }
+
+    .glass {
+      background: rgba(15, 23, 42, 0.6);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .neon-line {
+      position: absolute;
+      background: #236192;
+      box-shadow: 0 0 15px #236192;
+      z-index: -1;
+    }
+
+    .neon-line-active {
+      background: #6F263D;
+      box-shadow: 0 0 15px #6F263D;
+    }
+
+    .win-badge {
+      background: linear-gradient(90deg, #059669, #10b981);
+      box-shadow: 0 0 10px rgba(16, 185, 129, 0.5);
+    }
+  </style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center p-4">
+  <div id="root" class="w-full max-w-6xl"></div>
+
+  <script type="text/babel">
+    const { useState } = React;
+
+    const TeamBox = ({ name, score, isWinner, isCurrent, color }) => (
+      <div className={`relative flex items-center justify-between p-4 rounded-xl glass w-56 transition-all duration-500 ${isWinner ? 'border-l-4 border-green-500' : ''} ${isCurrent ? 'ring-2 ring-burgundy-500 animate-pulse border-l-4 border-[#6F263D]' : ''}`}>
+        <span className={`font-black tracking-widest ${isWinner ? 'text-white' : 'text-gray-500'}`}>{name}</span>
+        <span className={`text-2xl font-black ${isWinner ? 'text-green-400' : 'text-gray-600'}`}>{score}</span>
+        {isWinner && <div className="absolute -top-2 -right-2 win-badge text-[8px] font-black px-2 py-0.5 rounded uppercase italic">Advanced</div>}
+      </div>
+    );
+
+    const Bracket = () => {
+      return (
+        <div className="relative">
+          <div className="text-center mb-16">
+            <h1 className="font-sync text-4xl md:text-6xl font-bold uppercase tracking-tighter mb-2">
+              The <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#6F263D] to-[#236192]">Path</span> to Glory
+            </h1>
+            <p className="text-gray-500 uppercase tracking-[0.5em] text-xs">Colorado Avalanche Playoff Tracker 2026</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center relative">
+
+            {/* ROUND 1 */}
+            <div className="space-y-12">
+              <h3 className="text-center font-sync text-[10px] text-gray-500 mb-4 tracking-widest uppercase">Round 1</h3>
+              <div className="space-y-4">
+                <TeamBox name="COLORADO" score="4" isWinner={true} />
+                <TeamBox name="LA KINGS" score="0" isWinner={false} />
+              </div>
+            </div>
+
+            {/* ROUND 2 */}
+            <div className="space-y-12 relative">
+              {/* Connectors to R1 */}
+              <div className="hidden md:block neon-line h-0.5 w-12 -left-12 top-1/2 neon-line-active"></div>
+
+              <h3 className="text-center font-sync text-[10px] text-gray-500 mb-4 tracking-widest uppercase">Conference Semi</h3>
+              <div className="space-y-4">
+                <TeamBox name="COLORADO" score="4" isWinner={true} />
+                <TeamBox name="MINNESOTA" score="1" isWinner={false} />
+              </div>
+            </div>
+
+            {/* CONFERENCE FINALS */}
+            <div className="space-y-12 relative">
+              {/* Connectors to R2 */}
+              <div className="hidden md:block neon-line h-0.5 w-12 -left-12 top-1/2 neon-line-active"></div>
+
+              <h3 className="text-center font-sync text-[10px] text-[#6F263D] mb-4 tracking-widest uppercase font-bold">Western Finals</h3>
+              <div className="space-y-4">
+                <TeamBox name="COLORADO" score="-" isCurrent={true} />
+                <div className="w-56 p-4 rounded-xl border-2 border-dashed border-gray-800 text-center">
+                  <p className="text-[10px] text-gray-600 uppercase font-bold">Waiting for Winner</p>
+                  <p className="text-xs text-gray-400 italic">VGK / ANA (2-2)</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          {/* Final Trophy Box (Floating Bottom) */}
+          <div className="mt-20 flex justify-center">
+            <div className="glass p-8 rounded-full burgundy-glow border-[#6F263D] border-2 animate-bounce cursor-pointer group">
+              <i className="fas fa-trophy text-4xl text-yellow-500 group-hover:scale-125 transition duration-300"></i>
+            </div>
+          </div>
+        </div>
+      );
+    };
+
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(<Bracket />);
+  </script>
+</body>
+
+</html>
