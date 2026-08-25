@@ -4,17 +4,17 @@ Welcome to the ultimate digital home for **Avs fans**! This project is a dedicat
 
 ---
 
-## ⚡ Live Preview
+### Live Preview
 
 Experience the FansHub right now:  
 👉 [**Enter Colorado Avalanche FansHub**](https://kytka9.github.io/Colorado_Avalanche_fanshub/)
 
 ---
 
-## Cooperation & Contact
+### Cooperation & Contact
 
 * **Discord:** `kytka9`
 * **Email:** `kytka9@proton.me`
 
 ---
-<p align="center">Made for <span style="color:#6F263D">Burgundy</span> & <span style="color:#236192">Blue</span>/p>
+<p align="center">Made for <span style="color:#6F263D">Burgundy</span> & <span style="color:#236192">Blue</span> </p>
