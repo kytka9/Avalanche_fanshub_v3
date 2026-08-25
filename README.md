@@ -6,14 +6,12 @@ Welcome to the ultimate digital home for **Avs fans**! This project is a dedicat
 
 ### Live Preview
 
-Experience the FansHub right now:  
 👉 [**Enter Colorado Avalanche FansHub**](https://kytka9.github.io/Colorado_Avalanche_fanshub/)
 
 ---
 
 ### Cooperation & Contact
 
-* **Discord:** `kytka9`
 * **Email:** `kytka9@proton.me`
 
 ---
