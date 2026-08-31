@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+
+<html lang="sk">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Colorado Avalanche — Oficiálna fanúšikovská stránka</title>
+<meta name="description" content="Profesionálna stránka o hokejovom tíme Colorado Avalanche: kompletná súpiska 2025/2026, história, legendy, štatistiky a Stanley Cup tituly." />
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+
+
+  <header>
+  <div class="wrap nav">
+    <!-- Pridaný odkaz href="/" na hlavnú stránku -->
+    <a href="./index.html" class="brand">
+      <img src="./colorado.webp" alt="Colorado Avalanche Logo" class="logo">
+      COLORADO AVALANCHE
+    </a>
+    <ul id="menu">
+      <li><a href="#zapasy">Zápasy</a></li>
+      <li><a href="#novinky">Novinky</a></li>
+      <li><a href="#tim">Tím</a></li>
+      <li><a href="#klub">Klub</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+  </div>
+</header>
+<!-- <header>
+  <div class="wrap nav">
+    <div class="brand"><span class="logo"></span> COLORADO AVALANCHE</div>
+    <ul id="menu">
+      <li><a href="#zapasy">Zápasy</a></li>
+      <li><a href="#novinky">Novinky</a></li>
+      <li><a href="#tim">Tím</a></li>
+      <li><a href="#hraci">Hviezdy</a></li>
+      <li><a href="#supiska">Súpiska</a></li>
+      <li><a href="#legendy">Legendy</a></li>
+      <li><a href="#historia">História</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+    <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+  </div>
+</header> -->
+
+<div class="hero">
+  <div class="wrap hero-inner">
+    <div>
+      <p class="eyebrow">National Hockey League &middot; Central Division</p>
+      <h1>Colorado <span>Avalanche</span></h1>
+      <p>Rýchlosť, tvrdosť a tri Stanley Cupy. Lavína z Denveru patrí dlhodobo k najatraktívnejším tímom NHL — domovom je Ball Arena a srdcom hry je ofenzíva vedená z modrej čiary.</p>
+      <!-- <div class="btns">
+        <a class="btn btn-primary" href="#supiska">Pozri súpisku</a>
+        <a class="btn btn-ghost" href="#historia">História klubu</a>
+      </div> -->
+    </div>
+<div class="interactive-section">
+      <h3>Objav náhodnú zaujímavosť o Colorado Avalanche</h3>
+      <button class="btn" id="fact-btn">Zobraziť zaujímavosť</button>
+      <div id="fact-display">Klikni na tlačidlo vyššie!</div>
+    </div>
+  </div>
+</div>
+
+
+<section id="zapasy">
+  <div class="wrap">
+    <p class="eyebrow">Výsledky</p>
+    <h2 class="reveal">Posledné zápasy <a href="#"> všetky zápasy <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h2>
+    <div class="table-wrap reveal">
+      <table>
+        <thead>
+          <tr>
+            <th>Dátum</th>
+            <th>Domáci</th>
+            <th style="text-align: center;">Skóre</th>
+            <th>Hostia</th>
+            <th>Výsledok</th>
+          </tr>
+        </thead>
+        <tbody id="games"></tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="novinky">
+  <div class="wrap">
+    <p class="eyebrow">Správy zo sezóny</p>
+    <h2 class="reveal">Novinky z klubu <a href="#"> všetky novinky <i class="fa-solid fa-arrow-up-right-from-square"></i></a></h2>
+    <div class="news-grid" id="news"></div>
+  </div>
+</section>
+
+<section id="tim">
+  <div class="wrap">
+    <p class="eyebrow">Klub v číslach</p>
+    <h2 class="reveal">Profil organizácie</h2>
+    <p class="lead reveal">Založený v roku 1972 ako Quebec Nordiques, od sezóny 1995/96 pôsobí v Denveri v štáte Colorado. Domáce zápasy hráva v Ball Arene s kapacitou vyše 18-tisíc divákov.</p>
+    <div class="stats">
+      <div class="stat reveal"><div class="num" data-count="3">0</div><div class="lbl">Stanley Cupy</div></div>
+      <div class="stat reveal"><div class="num" data-count="1995">0</div><div class="lbl">Rok v Denveri</div></div>
+      <div class="stat reveal"><div class="num" data-count="18007">0</div><div class="lbl">Kapacita arény</div></div>
+      <div class="stat reveal"><div class="num" data-count="9">0</div><div class="lbl">Tituly divízie</div></div>
+    </div>
+    <figure class="reveal" style="margin-top:42px">
+      <img src="./IMG_3723.HEIC" alt="Tímová fotografia Colorado Avalanche pre sezónu 2025/2026" loading="lazy" />
+      <figcaption>Oficiálna tímová fotografia — sezóna 2025/2026</figcaption>
+    </figure>
+  </div>
+</section>
+
+<div class="band" style="background-image:url('./IMG_3723.HEIC')" role="img" aria-label="Brankár Colorado Avalanche zasahuje pred bránkou">
+  <div class="cap">Ball Arena &middot; Denver, Colorado</div>
+</div>
+
+<section id="hraci">
+  <div class="wrap">
+    <p class="eyebrow">Hviezdy tímu</p>
+    <h2 class="reveal">Kľúčoví hráči</h2>
+    <p class="lead reveal">Trojica, okolo ktorej stavia Colorado svoju hru — filtruj podľa postu.</p>
+    <div class="filters">
+      <button class="chip active" data-f="all">Všetci</button>
+      <button class="chip" data-f="utocnik">Útočníci</button>
+      <button class="chip" data-f="obranca">Obrancovia</button>
+    </div>
+    <div class="grid" id="stars"></div>
+  </div>
+</section>
+
+<section id="supiska">
+  <div class="wrap">
+    <p class="eyebrow">Roster</p>
+    <h2 class="reveal">Súpiska 2025/2026</h2>
+    <p class="lead reveal">Kompletná súpiska tímu. Kliknutím na hlavičku stĺpca zoradíš tabuľku.</p>
+
+    <h3 class="sub">Hlavný tréner</h3>
+    <div class="table-wrap reveal">
+      <table>
+        <thead><tr><th>Meno</th><th>Výška</th><th>Váha</th><th>Narodený</th><th>Miesto narodenia</th></tr></thead>
+        <tbody><tr><td class="name">Bednar Jared</td><td>191</td><td>93</td><td>1972-02-28</td><td>Yorkton, SK, CAN</td></tr></tbody>
+      </table>
+    </div>
+
+    <h3 class="sub">Brankári</h3>
+    <div class="table-wrap reveal"><table data-roster="goalies"></table></div>
+
+    <h3 class="sub">Útočníci</h3>
+    <div class="table-wrap reveal"><table data-roster="forwards"></table></div>
+
+    <h3 class="sub">Obrancovia</h3>
+    <div class="table-wrap reveal"><table data-roster="defense"></table></div>
+
+    <h3 class="sub">Legenda</h3>
+    <ul class="legend-list">
+      <li><b>Výška</b> — centimetre (cm)</li>
+      <li><b>Váha</b> — kilogramy (kg)</li>
+      <li><b>#</b> — číslo dresu</li>
+      <li><b>Poz</b> — C center, LW ľavé krídlo, RW pravé krídlo, D obranca, G brankár</li>
+      <li><b>Sh</b> — strana hokejky (L/R)</li>
+      <li><b>Narodený</b> — dátum (RRRR-MM-DD)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="legendy">
+  <div class="wrap">
+    <p class="eyebrow">Hall of Fame</p>
+    <h2 class="reveal">Legendy klubu</h2>
+    <p class="lead reveal">Pod strechou Ball Areny visia vyradené čísla mužov, ktorí definovali éru Lavíny.</p>
+    <div class="two reveal">
+      <figure>
+        <img src="./IMG_3723.HEIC" loading="lazy" />
+        <figcaption>Vyradené čísla: Roy 33, Sakic 19, Forsberg 21</figcaption>
+      </figure>
+      <figure>
+        <img src="./IMG_3723.HEIC" loading="lazy"/>
+        <figcaption>Oslava prvého Stanley Cupu — 1996</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<section id="historia">
+  <div class="wrap">
+    <p class="eyebrow">Timeline</p>
+    <h2 class="reveal">Míľniky klubu</h2>
+    <div class="timeline reveal">
+      <div class="tl-item"><b>1972 — Vznik</b><span>Klub vzniká ako Quebec Nordiques v lige WHA.</span></div>
+      <div class="tl-item"><b>1979 — Vstup do NHL</b><span>Nordiques sa stávajú súčasťou NHL.</span></div>
+      <div class="tl-item"><b>1995 — Presun do Denveru</b><span>Franšíza dostáva nový názov Colorado Avalanche.</span></div>
+      <div class="tl-item"><b>1996 — Prvý Stanley Cup</b><span>Vo finále zmietli Floridu Panthers 4:0 na zápasy.</span></div>
+      <div class="tl-item"><b>2001 — Druhý titul</b><span>Sedemzápasové finále proti New Jersey Devils.</span></div>
+      <div class="tl-item"><b>2022 — Tretí titul</b><span>Návrat na vrchol po dvoch dekádach.</span></div>
+    </div>
+  </div>
+</section>
+
+
+<section id="faq">
+  <div class="wrap">
+    <p class="eyebrow">Otázky</p>
+    <h2 class="reveal">Často kladené otázky</h2>
+    <div id="faq-list" class="reveal"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p><strong>Colorado Avalanche — fanúšikovská stránka.</strong></p>
+    <p>Neoficiálny projekt. Všetky ochranné známky patria NHL a Colorado Avalanche.</p>
+  </div>
+</footer>
+
+<script src="./assets/script/script.js"></script>
+</body>
+</html>
