@@ -20,10 +20,11 @@ function showRandomFact() {
 if (factBtn) {
   factBtn.addEventListener('click', showRandomFact);
 }
+/* ---------- KONIEC - ZAUJÍMAVOSTI (HERO) ---------- */
 
 /* ---------- ZÁPASY DATA & RENDER ---------- */
 const games = [
-  { d: "12.04.", home: "Colorado Avalanche", homeLogo: "../../colorado.webp", away: "Vegas Golden Knights", awayLogo: "./assets/images/logos/vgk.png", s: ":", w: null },
+  { d: "12.04.", home: "Colorado Avalanche", homeLogo: "../../MIN.png", away: "Vegas Golden Knights", awayLogo: "../../minn.png", s: ":", w: null },
   { d: "09.04.", home: "Edmonton Oilers", homeLogo: "./assets/images/logos/edm.png", away: "Colorado Avalanche", awayLogo: "./assets/images/logos/col.png", s: "3:1", w: false },
   { d: "06.04.", home: "Colorado Avalanche", homeLogo: "./assets/images/logos/col.png", away: "Minnesota Wild", awayLogo: "./assets/images/logos/min.png", s: "5:1", w: true },
   { d: "03.04.", home: "Dallas Stars", homeLogo: "./assets/images/logos/dal.png", away: "Colorado Avalanche", awayLogo: "./assets/images/logos/col.png", s: "1:2", w: true },
@@ -63,6 +64,7 @@ if (gamesEl) {
       </tr>`;
   }).join('');
 }
+/* ---------- KONIEC - ZÁPASY DATA & RENDER ---------- */
 
 /* ---------- HVIEZDY ---------- */
 const stars = [
