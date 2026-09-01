@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Novinky</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a href="./index.html" class="brand">
+        <img src="./colorado.webp" alt="Colorado Avalanche Logo" class="logo">
+        COLORADO AVALANCHE
+      </a>
+      <ul id="menu">
+        <li><a href="../../index.html">Hlavná stránka</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <section id="novinky">
+    <div class="wrap">
+      <h2 class="reveal">Novinky z klubu</h2>
+      <p class="lead reveal">Aktuálne dianie okolo Colorado Avalanche</p>
+
+      <!-- Filtre pre novinky -->
+      <div class="news-filters">
+        <button class="chip news-chip active" data-m="all">Všetky</button>
+        <button class="chip news-chip" data-m="nov26">November 2026</button>
+        <button class="chip news-chip" data-m="okt26">Október 2026</button>
+        <button class="chip news-chip" data-m="sep26">September 2026</button>
+      </div>
+
+      <div class="news-grid" id="news"></div>
+    </div>
+  </section>
+
+  <script src="../script/news.js"></script>
+  <script src="../script/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zápasy</title>
+  <link rel="stylesheet" href="../style/style.css">
+</head>
+
+<body>
+
+  <header>
+    <div class="wrap nav">
+      <a href="./index.html" class="brand">
+        <img src="../../colorado.webp" alt="Colorado Avalanche Logo" class="logo">
+        COLORADO AVALANCHE
+      </a>
+      <ul id="menu">
+        <li><a href="../../index.html">Hlavná stránka</a></li>
+      </ul>
+      <button class="burger" id="burger" aria-label="Menu">&#9776;</button>
+    </div>
+  </header>
+
+  <section id="zapasy">
+    <div class="wrap">
+      <p class="eyebrow">Zápasy v sezóne 2026/2027</p>
+      <h2 class="reveal">Výsledky</h2>
+      <div class="table-wrap reveal">
+        <table>
+          <thead>
+            <tr>
+              <th>Dátum</th>
+              <th style="text-align: right;">Domáci</th>
+              <th style="text-align: center;">Skóre</th>
+              <th>Hostia</th>
+              <th>Výsledok</th>
+            </tr>
+          </thead>
+          <tbody id="gamesAll"></tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <script src="../script/matches.js"></script>
+  <script src="../script/script.js"></script>
+
+</body>
+
+</html>
